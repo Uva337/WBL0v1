@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L0</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; }
+    #box { display: grid; gap: 1rem; max-width: 720px; }
+    input { padding: .5rem; font-size: 1rem; width: 320px; }
+    button { padding: .6rem 1rem; font-size: 1rem; cursor: pointer; }
+    pre { background: #f6f8fa; padding: 1rem; overflow: auto; }
+  </style>
+</head>
+<body>
+  <h1>Order</h1>
+  <div id="box">
+    <label>
+      ID заказа (order_uid):
+      <input id="orderId" placeholder="b563feb7b2b84b6test" />
+    </label>
+    <div>
+      <button onclick="fetchOrder()">Получить заказ</button>
+    </div>
+    <pre id="out">Введите ID и нажмите кнопку…</pre>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>
